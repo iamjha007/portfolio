@@ -1,0 +1,388 @@
+*{
+margin: 0;
+padding: 0;
+font-weight: normal;
+
+}
+.bold{
+    text-decoration: solid;
+}
+#body_header{
+    
+    height:65vh;
+    
+    background-image:url('../images/head1.jpg');
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+}
+
+.horizontal_list{
+    list-style-type:none;
+    padding-top: 10px;
+    
+}
+.horizontal_list li{
+    display:inline;
+    color: floralwhite;
+    margin:0 8px 8px 0;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.horizontal_list li a{
+    color: white;
+    text-decoration: none;
+}
+.nav_head li a{
+    transition: text-decoration 2s,color 1s;
+} 
+.horizontal_list li a:hover{
+    text-decoration: underline;
+    color:lightgrey;
+    
+   
+}
+.text_center{
+    text-align: center;
+}
+.my_name{
+    color: ghostwhite;
+
+    font-size:4rem;
+    font-weight: bolder;
+    letter-spacing:4px;
+   margin-top: 100px;;
+
+}
+.social_link i{
+   
+   padding:4px;
+   
+   margin-top: 10px;
+   margin-left: 5px;
+   padding:10px;
+   border-radius: 50%;
+   
+
+}
+.social_link li a i:hover{
+   box-shadow: 0 0 6px 4px #83818c;
+}
+#about{
+    height: auto;
+    width: 100%;
+    font-size: 28px;
+    
+  
+}
+#about p{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right:100px;
+    border-left: #cd420b solid 6px;
+    padding-left: 5px;
+}
+.my_pic{
+    height:10rem;
+    width: 10rem;
+    margin:auto;
+    margin-top:-13vh;
+    margin-bottom: 20px;
+}
+
+.my_pic img{
+    width:100%;
+    height:100%;
+    
+    border-radius: 100%;
+    box-shadow: 0 0 5px 4px grey;
+    border: white;
+    
+}
+section{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+} 
+section:nth-child(2n+1){
+    background-color: rgba(233, 181, 220,0.3);
+    border-radius: 50px;
+}
+section:nth-child(2n){
+    background-color: white;
+    border-radius: 5px;
+}
+.section_heading{
+    width:auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+}
+.section_heading span{
+    font-size: 40px;
+    color: #2857a4;
+    padding-top:10px ;
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-weight: bolder;
+    letter-spacing:3px;
+}
+#skill{
+    
+    margin-top: 30px;
+}
+.skills_display{
+
+    width:60vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+}
+.skill_progress{
+    height:1.8rem;
+    width: 9rem;
+    
+    border-radius:10px;
+    background-color:lightgrey;
+    margin:30px 50px 30px 10px;
+    
+   
+}
+.skill_name span{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 6px;
+}
+.skill_progress>div{
+     border-radius: 20px 10px 10px 20px;
+      
+}
+
+.projects{
+    width:75vw;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:center;
+    
+     
+   
+}
+.project_dd{
+    
+     margin: 10px 10px 5px 5px;
+}
+
+.project_dd img{
+    height:15rem;
+    width: 15rem;
+    
+}
+
+/* percentage class*/
+
+.ninety_five{
+   height:inherit;
+   width:98%;
+   border-right:20px;
+}
+.eighty_five{
+    height:inherit;
+    
+    width: 85%;
+}
+.seventy_five{
+    height:inherit;
+    width: 75%;
+}
+.sixty_five{
+    height:inherit;
+    width: 65%;
+}
+.fifty_five{
+    height:inherit;
+    width: 55%;
+}
+.fourty_five{
+    height:inherit;
+    width: 45%;
+}
+/* color class */
+.blue{
+    background-color: rgb(7, 135, 145);
+}
+.orange{
+    background-color: rgba(245, 169, 6, 0.966);
+}
+.yellow{
+    background-color: rgba(43, 133, 8, 0.849);
+   
+}
+/* work experince section */
+.timeline{
+    position: relative;
+    width: 75%;
+   
+}
+.timeline_box{
+    position: relative;
+    width: 40%;
+    height: 5%;
+    min-height: 150px;
+    margin: 5px;
+   
+}
+.timeline_box:nth-child(2n){
+    left:55%
+}
+.divider{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border:5px dashed #52c8e6;
+    
+    left:50%;
+    top:10%;
+}
+
+
+
+.timeline_traveller{
+    position: sticky;
+    top: 30%;
+    transform: rotate(90deg);
+    z-index: 2;
+   
+}
+.timeline_box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+     z-index: 1;
+    top: 40%;
+    left: -14%;
+    border-radius: 50%;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: red;
+}
+.timeline_box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 32%;
+    right: -26.5%;
+    border-radius: 50%;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: red;
+}
+/* experience and education  */
+.timeline_heading{
+    font-size: 30px;
+    font-weight:900;
+    color: orange;
+}
+/* conatct me secton */
+#footer{
+
+    width: 100%;
+   
+    display: flex;
+    background:linear-gradient(45deg,rgba(27, 153, 221, 0.727),rgb(58, 58, 170));
+}
+#footer .section_heading span{
+    font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(189, 16, 62);
+    text-decoration:underline;
+    letter-spacing:1px;
+
+}
+.contact_about{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+#footer form label{
+    font-size: 25px;
+    color: whitesmoke;
+    text-shadow: 0 3px 3px grey;
+    margin-left: 12px;
+}
+#footer input{
+    display: block;
+    margin: 10px;
+    font-size:25px;
+    font-family: cursive;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+    background:linear-gradient(45deg,rgba(24, 144, 209, 0.727),rgb(58, 58, 170)120%);;
+    border-bottom: solid 2px rgba(17, 16, 16, 0.79);
+    color: aliceblue;
+    
+}
+#footer p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    text-shadow: 0 3px 2px grey;
+  
+}
+.contact{
+    margin:20px 10px 10px 10px;
+}
+@media screen and (max-width:400px){
+    
+}
+
+@media screen and (max-width:600px){
+
+    .divider{
+        position: absolute;
+        height: 75%;
+        width: 0;
+        border:5px dashed #52c8e6;
+        
+        left:5%;
+        top:10%;
+    }
+    .timeline_box{
+        left:12% !important;
+        width:80%;
+        margin: 10px;
+    }
+    /* .timeline_box:nth-child(2n){
+        left:12%;
+    } */
+  .timeline_box::after{
+      left: -12% !important;
+  }
+  html{
+      font-size: 12px;
+  }
+  #body_header{
+    
+    height:40vh;
+    
+  
+}
+.my_name{
+    margin-top: 15px;
+    font-size: 3rem;
+    
+}
+  .my_pic{
+   
+    margin-top:-11vh;
+    
+}
+   
+}
+
